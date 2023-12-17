@@ -44,7 +44,6 @@ def menu():
 
 	input()
 
-
 	while True:
 		clear()
 
@@ -52,8 +51,6 @@ def menu():
 			print(f"{i} - {options[i]}")
 
 		inp = input()
-
-		print("PORRA", inp)
 
 		clear()
 
@@ -90,7 +87,7 @@ def game():
 
 		grid.append(l)
 
-	grid[SETTINGS["gridSize"][1]//2][0] = "+"
+	grid[SETTINGS["gridSize"][1] // 2][0] = "+"
 
 	playerInfo = {
 		"alive":	True,
