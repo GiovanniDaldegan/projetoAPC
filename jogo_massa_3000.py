@@ -48,31 +48,31 @@ def menu():
 		clear()
 
 		for i in range(len(options)):
-			print(f"{i} - {options[i]}")
+			print(f"{i+1} - {options[i]}")
 
 		inp = input()
 
 		clear()
 
 		match inp:
-			case "0":
+			case "1":
 				print("O jogo já está rodando!")
 				game()
 
-			case "1":
+			case "2":
 				print(f"Configurações\n\nFPS: {SETTINGS['fps']}\nTamanho da matriz: {SETTINGS['gridSize'][1]}x{SETTINGS['gridSize'][0]}\nTamanho da célula: {SETTINGS['unitSize']}x{SETTINGS['unitSize']}")
 				input()
 				
 
-			case "2":
+			case "3":
 				print("Ranking\n\n\tSerá implementado em breve :)\n")
 				input()
 
-			case "3":
+			case "4":
 				print("Instruções\n\n> Controles:\n\nSeta para cima:\t\tmove para cima\nSeta para baixo:\tmove para baixo\nEspaço:\t\t\tatira\n\n> Regras do jogo:\n\nConsumo de combustível\nFicar parado:\t1\nMover:\t\t2\nAtirar:\t\t3\n\nSó é possível executar 1 ação de cada vez\n\n!! ATENÇÃO !!\nO jogo foi programado em um sistema Linux. Talvez haja problemas de compatibilidade com outros sistemas operacionais!")
 				input()
 
-			case "4":
+			case "5":
 				exit()
 
 def game():
